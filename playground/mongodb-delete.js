@@ -65,16 +65,16 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, client) => {
     //         console.log('Cant delete that Todos', err);
     //     });
 
-    db.collection('Users')
-        .findOneAndDelete({
-            // location: 'rg'
-            _id: new ObjectID('5c468d2c3d36c35e371484bc')
-        })
-        .then((result) => {
-            console.log(result.value);
-        }, (err) => {
-            console.log('Cant delete that Todos', err);
-        });
+    // db.collection('Users')
+    //     .findOneAndDelete({
+    //         // location: 'rg'
+    //         _id: new ObjectID('5c468d2c3d36c35e371484bc')
+    //     })
+    //     .then((result) => {
+    //         console.log(result.value);
+    //     }, (err) => {
+    //         console.log('Cant delete that Todos', err);
+    //     });
 
     client.close();
 })
